@@ -1,0 +1,25 @@
+# Render.com Configuration File
+# This file is used for automatic deployment on Render
+
+# Build command for Node.js/Python projects
+# For frontend: npm install && npm run build
+# For backend: pip install -r requirements.txt
+
+# Start command
+# For frontend: npm run preview (or serve the dist folder)
+# For backend: uvicorn main:app --host 0.0.0.0 --port $PORT
+
+# Environment variables (set in Render dashboard):
+# PORT=8002 (for backend)
+# HOST=0.0.0.0
+# NODE_ENV=production (for frontend)
+# VITE_API_URL=https://your-backend-name.onrender.com (for frontend)
+# VITE_WS_URL=wss://your-backend-name.onrender.com (for frontend)
+
+# Dockerfile for container deployment (optional)
+# FROM python:3.11-slim
+# WORKDIR /app
+# COPY requirements.txt .
+# RUN pip install -r requirements.txt
+# COPY . .
+# CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8002"]
